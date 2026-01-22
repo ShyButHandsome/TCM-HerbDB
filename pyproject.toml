@@ -1,0 +1,20 @@
+[project]
+name = "tcm-herbdb"
+version = "0.1.0"
+description = "TCM-HerbDB 是一个旨在将《中药学》教材中的药材结构化，并构建可查询、可扩展的中药数据库的项目。"
+readme = "README.md"
+authors = [
+    { name = "ShyButHandsome", email = "2672017231@qq.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "pandas>=2.3.3",
+    "pytest>=9.0.2",
+]
+
+[project.scripts]
+tcm-herbdb = "tcm_herbdb.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.9.18,<0.10.0"]
+build-backend = "uv_build"

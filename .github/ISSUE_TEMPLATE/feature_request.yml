@@ -1,0 +1,39 @@
+name: 功能请求
+about: 为这个项目提出一个想法
+title: ''
+labels: enhancement
+assignees: ''
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您为 TCM-HerbDB 项目提出功能请求！
+  - type: textarea
+    id: related-problem
+    attributes:
+      label: 这个功能请求是否与某个问题相关？
+      description: 请清晰简洁地描述问题。例如：我总是对 [...] 感到困扰
+      placeholder: 告诉我们您遇到的问题
+    validations:
+      required: false
+  - type: textarea
+    id: desired-solution
+    attributes:
+      label: 您希望看到什么样的解决方案？
+      description: 请清晰简洁地描述您想要发生的事情
+      placeholder: 告诉我们您希望实现什么功能
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives-considered
+    attributes:
+      label: 您考虑过的替代方案
+      description: 请清晰简洁地描述您考虑过的任何替代解决方案或功能
+      placeholder: 告诉我们您考虑过哪些替代方案
+    validations:
+      required: false
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 附加信息
+      description: 在此处添加有关功能请求的任何其他上下文或截图

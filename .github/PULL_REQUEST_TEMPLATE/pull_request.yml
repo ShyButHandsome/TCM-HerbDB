@@ -1,0 +1,48 @@
+name: Pull Request
+about: 提交一个 Pull Request
+title: ''
+labels: ''
+assignees: ''
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您为 TCM-HerbDB 项目贡献代码！
+  - type: textarea
+    id: summary
+    attributes:
+      label: 概述
+      description: 在此描述您所做的更改
+      placeholder: 告诉我们这个 PR 解决了什么问题
+    validations:
+      required: true
+  - type: textarea
+    id: changes
+    attributes:
+      label: 更改内容
+      description: 详细描述您所做的更改
+      placeholder: |
+        1. 修改了 [...]
+        2. 添加了 [...]
+        3. 修复了 [...]
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: 确认
+      description: 请确认您已完成以下操作
+      options:
+        - label: 我已确保代码符合项目的代码风格
+          required: true
+        - label: 我已测试了我的更改
+          required: true
+        - label: 我已更新了相关文档（如需要）
+          required: true
+        - label: 我已运行测试并确保它们通过
+          required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 附加信息
+      description: 在此处添加有关 PR 的任何其他信息
